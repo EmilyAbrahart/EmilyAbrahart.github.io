@@ -678,16 +678,20 @@ input, select, textarea {
 				width: 100%;
 			}
 		.work-img-span1{
-			display: block;
+			display: inline-block;
 			width: 100%;
+			height: 100%;
+			position: relative;
 		}
 		.work-img-span2{
 			display: block;
 			width: 100%;
+			position: relative;
 		}
 		.work-img-span3{
 			display: block;
 			width: 100%;
+			position: relative;
 		}
 		.image.main {
 			display: block;
@@ -706,10 +710,9 @@ input, select, textarea {
 			opacity: 0;
 			position: absolute;
 			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			-ms-transform: translate(-50%, -50%);
+			width: 100%;
 			text-align: center;
+			display: flex;
 		}
 
 		.work-img-hover2{
@@ -717,20 +720,18 @@ input, select, textarea {
 			opacity: 0;
 			position: absolute;
 			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			-ms-transform: translate(-50%, -50%);
+			width: 100%;
 			text-align: center;
+			display: flex;
 		}
 		.work-img-hover3{
 			transition: .5s ease;
 			opacity: 0;
 			position: absolute;
 			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			-ms-transform: translate(-50%, -50%);
+			width: 100%;
 			text-align: center;
+			display: flex;
 		}
 
 		.work-img-span1:hover .image.main.work{
