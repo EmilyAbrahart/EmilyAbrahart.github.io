@@ -214,6 +214,10 @@ input, select, textarea {
 		font-size: 1rem;
 	}
 
+	h3.work-project-title{
+		text-align: center;
+	}
+
 	h4 {
 		font-size: 0.8rem;
 	}
@@ -673,17 +677,115 @@ input, select, textarea {
 			.image.fit img {
 				width: 100%;
 			}
-
+		.work-img-span1{
+			display: block;
+			width: 100%;
+		}
+		.work-img-span2{
+			display: block;
+			width: 100%;
+		}
+		.work-img-span3{
+			display: block;
+			width: 100%;
+		}
 		.image.main {
 			display: block;
 			margin: 2.5rem 0;
 			width: 100%;
+			transition: .5s ease;
+  			backface-visibility: hidden;
 		}
 
 			.image.main img {
 				width: 100%;
 			}
 
+		.work-img-hover1{
+			transition: .5s ease;
+			opacity: 0;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+			text-align: center;
+		}
+
+		.work-img-hover2{
+			transition: .5s ease;
+			opacity: 0;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+			text-align: center;
+		}
+		.work-img-hover3{
+			transition: .5s ease;
+			opacity: 0;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+			text-align: center;
+		}
+
+		.work-img-span1:hover .image.main.work{
+			opacity: 0.3;
+		}
+
+		.work-img-span1:hover .work-img-hover1{
+			opacity: 1;
+		}
+
+		.work-img-span2:hover .image.main.work{
+			opacity: 0.3;
+		}
+
+		.work-img-span2:hover .work-img-hover2{
+			opacity: 1;
+		}		
+		
+		.work-img-span3:hover .image.main.work{
+			opacity: 0.3;
+		}
+
+		.work-img-span3:hover .work-img-hover3{
+			opacity: 1;
+		}
+
+		.work-img-text1{
+			background-color: rgba(190,127,95, 0.85);
+			color: white;
+			font-size: 1rem;
+			padding: 0.5rem 1rem;
+			border: 0.2rem solid white;
+			border-radius: 1rem;
+			margin: 0 auto;
+
+		}
+		.work-img-text2{
+			background-color: rgba(190,127,95, 0.85);
+			color: white;
+			font-size: 1rem;
+			padding: 0.5rem 1rem;
+			border: 0.2rem solid white;
+			border-radius: 1rem;
+			margin: 0 auto;
+		}
+
+		.work-img-text3{
+			background-color: rgba(190,127,95, 0.85);
+			color: white;
+			font-size: 1rem;
+			padding: 0.5rem 1rem;
+			border: 0.2rem solid white;
+			border-radius: 1rem;
+			margin: 0 auto;
+		}
 		@media screen and (max-width: 736px) {
 
 			.image.main {
